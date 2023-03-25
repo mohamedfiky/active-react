@@ -1,0 +1,131 @@
+.contact-form
+{
+    padding-top:60px;
+    padding-bottom: 60px;
+    background: url("./../../../public/images/contact.png");
+    background-size: cover;
+    position: relative;
+}
+
+.contact-form .overlay
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(233, 233, 233, 0.85);
+}
+
+.contact-form .container
+{
+    position: relative;
+    z-index: 2;
+}
+
+.contact-form h2{
+
+    font-size: 38px;
+    color:var(--main-color);
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.contact-form form
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form form .left
+{
+    width:48%;
+}
+
+.contact-form form .right
+{
+    width: 48%;
+}
+
+.contact-form form input:not([type="submit"]),
+.contact-form form textarea 
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding:15px;
+    border: 1px solid #fff;
+    color:#444;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    height:54px;
+    outline: none;
+}
+
+.contact-form form textarea 
+{
+    height: 123px;
+}
+
+.contact-form form input:not([type="submit"]):focus,
+.contact-form form textarea:focus
+{
+    border:1px solid var(--main-color);
+}
+
+.contact-form form input:not([type="submit"]):focus::placeholder,
+.contact-form form textarea:focus::placeholder
+{
+    opacity: 0;
+}
+
+.contact-form form input[type="submit"]
+{
+    display: block;
+    width: 100%;
+    height:54px;
+    padding: 15px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form form input[type="submit"]:hover{
+    opacity: 1;
+}
+
+
+
+@media (max-width : 992px){
+    
+
+    .contact-form form{
+        flex-direction: column;
+    }
+    
+    .contact-form form .left,
+    .contact-form form .right
+    {
+        width: 70%;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width : 768px){
+    
+
+    .contact-form form .left,
+    .contact-form form .right
+    {
+        width: 90%;
+    }
+
+}

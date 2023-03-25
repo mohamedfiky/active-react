@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root{
+    --main-color: #17beae ;
+    --second-color: #2c4755 ;
+}
+
+.container{
+    width:90%;
+    margin: auto;
+}
+
+.special-h{
+    color:rgb(227, 227, 227);
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    letter-spacing: -2px;
+
+}
+
+.special-h + p{
+    font-size: 18px;
+    color:#666;
+    margin: -27px 0 0;
+    text-align: center;
+}
+
+@media (max-width : 776px){
+    .special-h{
+        font-size: 60px;
+    }
+
+    .special-h + p{
+        font-size: 16px;
+        margin: -18px 0 0;
+    }
+}

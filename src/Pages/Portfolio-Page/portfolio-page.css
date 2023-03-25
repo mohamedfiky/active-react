@@ -1,0 +1,36 @@
+.portfolio-page{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.portfolio-page .portfolio-projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.portfolio-page .portfolio-projects .project{
+    text-align: center;
+    background: #f6f6f6;
+    border: 1px solid #dbdbdb;
+}
+
+.portfolio-page .portfolio-projects .project img{
+    max-width: 100%;
+}
+
+.portfolio-page .portfolio-projects .project .project-info{
+    padding: 20px;
+}
+
+.portfolio-page .project .project-info h3{
+    margin: 0 0 10px;
+}
+
+.portfolio-page .project .project-info p{
+    color:#666;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
